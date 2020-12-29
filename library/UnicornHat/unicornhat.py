@@ -102,7 +102,7 @@ PHAT = [
     [31, 23, 15, 7]
 ]
 
-WS_B = [
+WAVEB = [
     [0, 1, 2, 3, 4, 5, 6, 7],
     [8, 9, 10, 11, 12, 13, 14, 15],
     [16, 17, 18, 19, 20, 21, 22, 23],
@@ -125,7 +125,7 @@ def setup():
 
     ws2812.begin()
 
-    set_layout(WS_B)
+    set_layout(WAVEB)
 
     atexit.register(_clean_shutdown)
 
@@ -154,7 +154,7 @@ def set_layout(pixel_map = AUTO):
     global _map
 
     if pixel_map is None:
-        pixel_map = PHAT # Assume PHAT
+        pixel_map = WAVEB # Assume WAVEB
         try:
             product = open("/proc/device-tree/hat/product","r").read().strip()
             if product[:11] == "Unicorn HAT":

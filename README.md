@@ -4,7 +4,7 @@ Modification of the [pimoroni/unicorn-hat](https://github.com/pimoroni/unicorn-h
 ```
 import unicornhat as unicorn
 
-unicorn.set_layout(unicorn.WS_B)
+unicorn.set_layout(unicorn.WAVEB)
 ```  
 
 <br><br><br>
