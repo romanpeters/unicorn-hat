@@ -1,3 +1,18 @@
+### Waveshare Hat
+Modification of the [pimoroni/unicorn-hat](https://github.com/pimoroni/unicorn-hat) library to work with the Waveshare RGB LED Hat (B).
+
+```
+import unicornhat as unicorn
+
+unicorn.set_layout(unicorn.WS_B)
+```  
+
+<br><br><br>
+
+pimoroni/unicorn-hat README.md:
+
+--------------------
+
 ![Unicorn HAT/pHAT](unicorn-hat-logo.png)
 
 Available from Pimoroni:  
